@@ -1,0 +1,76 @@
+<!--  ESPECIFICIDADES:
+<> inline  - grau de força: 1
+# ID Selector - grau de força: 2
+. Classe, pseudo Classe, atributo selector - grau de força: 3
+  Elemento Selector - Grau de força: 4.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- título da ABA do projeto-->
+    <title>Wilber Ribeiro - DoWhile 2021</title>
+
+    <!-- carrega a configuração do arq. interno CSS para o HTML-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- conexão com o servidor google para extrair a fonte desejada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- referência do CSS da fonte:  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="avatar">
+          <span>
+            <img src="images/build.svg" alt="selo Rocketseat" />
+          </span>
+          <img id="userPhoto" src="images/wilber.jpg" alt="Foto Pessoal" />
+        </div>
+        <!-- título grande da página -->
+        <h1 id="userName">Maik Brito</h1>
+        <!-- TARGET colocado no <a para poder funcionar -->
+        <a id="linkUser" href="https://github.com/maykbrito" target="_blank">
+          <img id="nameGit" src="images/github.svg" alt="ícone github" />
+          <span id="userLogin">Maikbrito</span>
+        </a>
+
+        <!-- link externo - hiperlink, direciona p/ pag.  -->
+
+        <p id="userBio">
+          An instructor focused on helping pople start programming for web
+        </p>
+
+        <!-- CRIADA UMA LISTA.  -->
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="https://youtube.com/maykbrito" target="_blank">
+              <img src="images/youtube.svg" alt="ícone youtube" />
+            </a>
+          </li>
+          <li class="facebook">
+            <a href="https://facebook.com/maykbrito" target="_blank">
+              <img src="images/facebook.svg" alt="ícone facebook" />
+            </a>
+          </li>
+          <li class="instagram">
+            <a href="https://instagram.com/maykbrito" target="_blank">
+              <img src="images/instagram.svg" alt="ícone instagram" />
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="https://twitter.com/maykbrito" target="_blank">
+              <img src="images/twitter.svg" alt="ícone twitter" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

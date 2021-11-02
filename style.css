@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+}
+html,
+body {
+  /* criada uma variável de nome gray com os parâmetros:
+  hls: h=cor, l=saturação, l=luz */
+  --black: hsl(240, 6%, 13%); /* CRIADA VARIÁVEL PARA CONFIGURAÇÃO DE COR */
+  --gray: hsl(240, 9%, 89%); /* CRIADA VARIÁVEL PARA CONFIGURAÇÃO DE COR */
+
+  height: 100%; /* ALTURA */
+  font-family: 'Roboto', sans-serif;
+  /* webkit: a propriedade a frente vai funcionar no navegadores webkit: crhome, safari */
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid; /* VISUALIZAÇÃO DOS ELEMENTOS  */
+  place-items: center; /* CENTRALIZAR AO MEIO OS ITENS*/
+}
+
+main {
+  background: url(./images/Background.png);
+  width: 375px;
+  height: 812px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  /*color: lightgray; */
+
+  margin-top: 2.5rem;
+}
+
+a {
+  color: var(--gray);
+  text-decoration: none; /* retirado a decoração - sublinhada do link; */
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: var(--gray);
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex; /* lista fica uma ao lado da outra na vertical*/
+  gap: 0.5rem; /* espaço entre os elementos da lista*/
+
+  justify-content: center;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; /* ALINHAMENTO DA CLASSE .container aAO CENTRO */
+
+  color: var(--gray);
+}
+
+.avatar {
+  width: 10rem; /* 1 rem = 16 px */
+  margin: 11.5rem auto 0;
+
+  position: relative; /* LIMITE PARA O ABSOLUTE DO .avatar span*/
+}
+
+.avatar span {
+  position: absolute; /* CRIADO NÍVEL DE EMPILHAMENTO*/
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover; /* adaptar a imagem dentro do widht e height - cobre todo o espaço */
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
